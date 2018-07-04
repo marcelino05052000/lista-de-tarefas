@@ -1,0 +1,6 @@
+Lista de coisas: <br><br>
+Insira algo e pressione Salvar: <br>
+<input [(ngModel)] = "nome"> <button (click) = "salvar()"> Salvar </button> <br>
+<p *ngFor = "let lista of listas; let indice = index">
+  {{lista}}<button (click) = "excluir(indice)"> X </button>
+</p>
